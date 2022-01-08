@@ -1,0 +1,36 @@
+/* body.css for personal-website */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ECF0F1;
+}
+
+.introduction-module {
+    width: 50vw;
+    height: 100vh;
+    background-color: #34495E;
+    color: #FAFAFA;
+    float: left;
+}
+
+.introduction-module-title {
+    margin-top: 25%;
+}
+
+.introduction-module-title h2 {
+    padding-right: 30px;
+    margin-bottom: 0px;
+    font-size: 64px;
+}
+
+.introduction-module-title h6 {
+    padding-left: 20px;
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.information-module {
+    width: 50vw;
+    height: 100vh;
+    float: right;
+}
