@@ -28,11 +28,23 @@ function Body() {
                 </div>
             </div>
             <div className={classes.informationModule}>
-                <div className={classes.technicalSkills}>
-                    <p>Technical skills</p>
+                <div className={classes.informationModuleTechnicalSkills}>
+                    <div className={classes.technicalSkillsText}>
+                        <p>My development focus is on web applications. I have experience in many projects for front-end design, and also backend functionality. The current web development languages I use are:
+                            <ul>
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
-                <div className={classes.workExperiences}>
-
+                <div className={classes.informationModuleWorkExperience}>
+                    <div className={classes.workExperienceText}>
+                        <p>I am working at DXC Technology, and I have streamlined many processes and gained many skills. I have lead projects related to revitalising records management, developed new processes for document cataloguing and directed colleagues to use these new processes. Additionally, I have created work instructions and guides for the newly created processes.</p>
+                    </div>
                 </div>
             </div>
         </body>
@@ -69,11 +81,6 @@ const useStyles = createUseStyles({
             fontSize: "18px",
         },
     },
-    informationModule: {
-        width: "50vw",
-        height: "50vh",
-        float: "right",
-    },
     introductionModuleIcons: {
         marginTop: "20%",
     },
@@ -86,6 +93,48 @@ const useStyles = createUseStyles({
         color: "#00a0dc",
         fontSize: "30px",
         paddingLeft: "0.5%",
+    },
+    informationModule: {
+        width: "50vw",
+        height: "100vh",
+        float: "right",
+    },
+    informationModuleTechnicalSkills: {
+        height: "50%",
+        width: "100%",
+        backgroundColor: "#ECF0F1",
+    },
+    technicalSkillsText: {
+        display: "flex",
+        justifyContent: "left",
+        marginLeft: "2%",
+        marginRight: "2%",
+        alignItems: "center",
+        height: "100%",
+        width: "96%",
+        '& p': {
+            marginTop: "0px",
+            textAlign: "left",
+        },
+    },
+    informationModuleWorkExperience: {
+        height: "50%",
+        width: "100%",
+        backgroundColor: "rgba(248, 127, 62, 0.88)",
+    },
+    workExperienceText: {
+        display: "flex",
+        justifyContent: "left",
+        marginLeft: "2%",
+        marginRight: "2%",
+        alignItems: "center",
+        height: "100%",
+        width: "96%",
+        color: "#FAFAFA",
+        '& p': {
+            marginTop: "0px",
+            textAlign: "left",
+        },
     },
 });
 
